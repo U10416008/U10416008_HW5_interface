@@ -58,9 +58,15 @@ class DisplayBeanMachine extends Pane {
     list.add(centerY-80);
 	list.add(centerX+10); 
     list.add(centerY-100);
-	
+	for(int i = 0;i <= 6; i++){
+		line[i] = new Line(centerX-60 + i*20,centerY+110,centerX-60 + i*20,centerY+150);
+		
+	}
     getChildren().clear();
     getChildren().add(polyline); 
+	for(int i = 0;i <= 6; i++){
+		getChildren().add(line[i]);    
+	}
 	
   }
   
