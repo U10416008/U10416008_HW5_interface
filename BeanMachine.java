@@ -12,7 +12,7 @@ public class BeanMachine extends Application {
   @Override // Override the start method in the Application class
   public void start(Stage primaryStage) {   
     // Create a scene and place it in the stage
-    Scene scene = new Scene(new MyPolygon(), 400, 400);
+    Scene scene = new Scene(new DisplayBeanMachine(), 400, 400);
     primaryStage.setTitle("ShowPolygon"); // Set the stage title
     primaryStage.setScene(scene); // Place the scene in the stage
     primaryStage.show(); // Display the stage
